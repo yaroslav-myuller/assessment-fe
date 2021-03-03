@@ -1,0 +1,18 @@
+<div class="form-group row" style="width: 100%; margin: 0 auto;">
+  <div class="col-xl-12 col-md-12">
+
+    <div class="h250-center-middle-over" *ngIf="loading">
+      <span class="spinner-border text-primary"></span>
+    </div>
+
+    <h1 class="">Todo list</h1>
+
+    <ng-container *ngFor="let todoItem of todoList">
+      <app-todo-item [todoItem]="todoItem" (getTodoList)="getTodoList()"></app-todo-item>
+    </ng-container>
+
+    <app-add-todo (addNewTodoToList)="addTodo($event)"></app-add-todo>
+
+  </div>
+</div>
+

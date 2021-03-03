@@ -1,0 +1,14 @@
+<form [formGroup]="todoFormGroup" (ngSubmit)="onSubmit()">
+  <div class="mt-2 light-gray p-1">
+
+    <label for="description" class="font-weight-bold">Add todo *</label>
+    <div class="position-relative">
+      <span *ngIf="loading" class="spinner-border text-primary position-absolute"></span>
+      <input type="text" class="form-control" id="description" formControlName="description"
+             placeholder="Write here your new todo description">
+    </div>
+    <div class="alert-danger px-2 py-1" *ngIf="fieldIsInvalid('description')">
+      Todo description must be between 2 and 255 letters long!
+    </div>
+  </div>
+</form>

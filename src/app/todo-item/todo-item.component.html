@@ -1,0 +1,37 @@
+<div class="row todo-item" style="width: 100%">
+  <div class="col-12 my-1">
+
+    <div class="float-left pointer py-2" (click)="changeTodoDone()" [title]="changeTitle()">
+      <span class="">
+        <input type="checkbox" class="" [checked]="todoItem.done">
+      </span>
+    </div>
+
+    <div class="float-left position-relative">
+      <span *ngIf="loading" class="spinner-border text-primary position-absolute ml-3"></span>
+      <div class="my-2 container-fluid" [ngClass]="getLineThroughClassIfDoneIsTrue()">{{ todoItem.description }}</div>
+    </div>
+
+    <div class="float-right text-right">
+      <div class=" ">
+        <button class="btn btn-primary btn-danger btn-sm mt-1"
+                [ngbPopover]="deleteDataPopUp"
+                placement="left"
+                [autoClose]="true"
+                title="Delete this todo">
+          <span class="trash">Delete</span>
+        </button>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- pop up for delete confirm -->
+<ng-template #deleteDataPopUp>
+  <div class="font-weight-bold text-center">
+    <div class="">Delete this Todo?</div>
+    <button class="btn btn-outline-danger m-2" (click)="deleteTodo()">Yes</button>
+    <button class="btn btn-primary m-2" (close)="'true'">No</button>
+  </div>
+</ng-template>

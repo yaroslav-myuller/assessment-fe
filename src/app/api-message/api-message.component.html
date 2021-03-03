@@ -1,0 +1,9 @@
+<div *ngIf="getMessage()" class="h100-center-middle-over">
+  <div class="align-middle">
+    <ngb-alert [type]="getType()" (close)="closeMessage()">
+      <div class="mr30"><span [innerText]="getMessage()"></span>
+      </div>
+    </ngb-alert>
+    <div class="h200">&nbsp;</div>
+  </div>
+</div>

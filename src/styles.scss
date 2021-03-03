@@ -1,1 +1,64 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+:root {
+  --white-opacity: rgba(255, 255, 255, 0.750);
+}
+
+body {
+  font-family: "TheSansRegular", Arial, Verdana, sans-serif !important;
+  background: #fff;
+  color: #3e3e3e;
+  word-wrap: break-word;
+}
+
+.h100-center-middle-over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  background: var(--white-opacity);
+}
+
+.h250-center-middle-over {
+  position: fixed;
+  top: 250px;
+  left: 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  background: var(--white-opacity);
+}
+
+.light-gray {
+  background: #e3e3e3;
+}
+
+.h200 {
+  height: 200px;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.line-through {
+  text-decoration: line-through;
+}
+
+input.form-control.ng-invalid, textarea.form-control.ng-invalid, select.form-control.ng-invalid, .ng-invalid {
+  border-color: #ec0e0e !important;
+}
+
+input.form-control.ng-invalid:focus, textarea.form-control.ng-invalid:focus, select.form-control.ng-invalid:focus, .ng-invalid:focus {
+  -webkit-box-shadow: 0 0 0 .2rem rgba(236, 14, 14, .25) !important;
+  box-shadow: 0 0 0 .2rem rgba(236, 14, 14, .25) !important;
+}

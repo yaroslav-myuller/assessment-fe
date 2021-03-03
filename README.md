@@ -1,5 +1,21 @@
 # AssessmentFe
 
+### Implementation
+
+Implement one validation for todo description (min size = 2 nad max size)
+Add bootstrap and ng-bootstrap for simple styling design, alert and pop up components
+
+The app have 4 components:
+* todo list component for get list of all the todos.
+* toto item component to handle each todo component.
+* todo add form component for add new component.
+* message component for displaying the message (error or warning).
+
+And 2 services:
+
+* Rest service for communication with back-end api.
+* Message service for central handling of messages.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.9.
 
 ## Development server
