@@ -6,7 +6,7 @@ import {Todo} from '../models/todo-model';
 @Component({
   selector: 'app-add-todo',
   templateUrl: './add-todo.component.html',
-  styles: []
+  styleUrls: ['./add-todo.component.scss']
 })
 export class AddTodoComponent implements OnInit {
   todoFormGroup: FormGroup;

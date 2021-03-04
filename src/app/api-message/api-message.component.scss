@@ -1,0 +1,16 @@
+.h100-center-middle-over {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  background: var(--white-opacity);
+}
+
+.h200 {
+  height: 200px;
+}

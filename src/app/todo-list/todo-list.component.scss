@@ -1,0 +1,10 @@
+.h250-center-middle-over {
+  position: fixed;
+  top: 250px;
+  left: 48%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 99999;
+  background: var(--white-opacity);
+}

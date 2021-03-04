@@ -7,7 +7,7 @@ import {MessageService} from '../services/message.service';
 @Component({
   selector: 'app-api-message',
   templateUrl: './api-message.component.html',
-  styles: []
+  styleUrls: ['./api-message.component.scss']
 })
 export class ApiMessageComponent implements OnInit {
 

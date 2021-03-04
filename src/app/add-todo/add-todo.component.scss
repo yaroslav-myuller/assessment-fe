@@ -1,0 +1,9 @@
+
+input.form-control.ng-invalid {
+  border-color: #ec0e0e !important;
+}
+
+input.form-control.ng-invalid:focus {
+  -webkit-box-shadow: 0 0 0 .2rem rgba(236, 14, 14, .25) !important;
+  box-shadow: 0 0 0 .2rem rgba(236, 14, 14, .25) !important;
+}
